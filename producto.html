@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -18,12 +19,32 @@
     </header>
 
     <nav class="navegacion">
-        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
         <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
     </nav>
 
     <main class="contenedor">
-        <h1>Producto</h1>
+        <h1>React JS</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="camisa react">
+
+            <div class="camisa__contenido">
+                <p>
+                    Diseñada especialmente para los entusiastas de la programación, nuestra camisa React combina un diseño moderno con comodidad inigualable. Confeccionada con algodón de alta calidad, esta camisa no solo es elegante sino también duradera, ideal para el día a día. Ya sea para una reunión de trabajo o para un evento casual, la camisa React será tu mejor aliada.
+                </p>
+
+                <form class="camisa__formulario">
+                    <select class="camisa__formulario__campo">
+                        <option disabled selected>Seleccionar Talla</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="camisa__formulario__campo" type="number" min="1" placeholder="Cantidad">
+                    <input class="camisa__formulario__enviar" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
